@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="student" class="com.mycompany.daospring.Student" autowire="byType">
+            <property name="firstname" value="Anusha"/>
+            <property name="lastname" value="Rao"/>
+            <property name="dob" value="June 20 2015"/>
+        </bean>
+		<bean id="grade" class="com.mycompany.daospring.Grade">
+                    <property name="grade" value="A"/> 
+                    <property name="subject" value="Maths"/>
+                </bean>
+
+	<bean id="address" class="com.mycompany.daospring.Address">
+		<property name="street" value="Broadway St" />
+		<property name="zip" value="77584"/>
+		<property name="city" value="Pearland" />
+	</bean>
+
+</beans>
+
